@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+top:0;
+Bottom: 0;
+left: 0;
+right: 0;
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: aquamarine;
+    color: white;
+    display: flex;
+    font-weight: 300;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+div{
+    width: 300px;
+    height: 40vh;
+    background-color: rgba(128, 128, 128, 0.542);
+    margin: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+div form{
+    padding: 8px;
+}
+div form table{
+padding: 10px 0 20px 0;
+}
+div form button{
+    margin: 0 5px 0 5px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform:uppercase;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulir biodata</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td><p>:</p></td>
+                <td><input type="text" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td><p>:</p></td>
+                <td><input type="text" id="nim"></td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">jurusan</label></td>
+                <td><p>:</p></td>
+                <td><input type="text" id="jurusan"></td>
+            </tr>
+            <tr>
+                <td><label for="fakultas">fakultas</label></td>
+                <td><p>:</p></td>
+                <td>
+                    <select name="Fakultas" id="fakultas">
+                        <option value="">Fakultas ilmu komputer</option>
+                        <option value="">Fakultas Teknik</option>
+                        <option value="">Fakultas ilmu budaya</option>
+                        <option value="">Fakultas ekonomi bisnis</option>
+                        <option value="">Fakultas kesehatan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="angkatan">angkatan</label></td>
+                <td><p>:</p></td>
+                <td><input type="text" id="angkatan"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">jenis kelamin</label></td>
+                <td><p>:</p></td>
+                <td>
+                    <label for="gender">Pria</label>
+                    <input type="radio" name="gender" id="gender">
+                    <label for="gender">Wanita</label>
+                    <input type="radio" name="gender" id="gender">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><p>:</p></td>
+                <td><input type="text" id="email"></td>
+            </tr>
+        </table>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+        <button type="button"><a href="/biodata.HTML">Biodata</a></button>
+    </form>
+    </div>
+</body>
+</html>
